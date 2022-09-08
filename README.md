@@ -19,3 +19,11 @@
 
 ***IP Localhost***
 - `127.0.0.1`
+
+## Template Engine (handlebars)
+- Layouts dùng để viết html giao diện chung
+- Khi render html, mặc định vào project và tìm thư mục `views` => Phải config lại để control thư mục render
+- Thư viện yêu cầu phải có `layours header and footer` và render html vào giữa.
+- Config lại để đặt tên thục mục cho ngắn => Đọc docs (bỏ `config option vào function khi gọi function chạy thư viện`)
+- Trong thực tế header và footer có rất nhiều layouts khác => tách cái layouts ra từng file riêng bằng cách tạo partials folder chứa các file layouts đó
+ + Sau đó sử dụng syntax: `{{> foo/bar }}` để import thư mục đó vào
